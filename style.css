@@ -1,70 +1,71 @@
 /* Základní nastavení */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   background-color: #fff8f0;
   color: #333;
+  text-align: center; /* CENTRUM pro celý obsah */
 }
 
 header {
-  background-color: #f4d9c6;
-  text-align: center;
-  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f4d9c6 0%, #eebd9a 100%);
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #8b3e2f;
 }
 
 header p {
   margin: 0.5rem 0 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #b76b51;
+  font-style: italic;
 }
 
 section {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   border-bottom: 1px solid #eee;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 section h2 {
   color: #b55d4a;
   margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0 auto;
+  color: #4b3a30;
+  line-height: 1.5;
 }
 
 .map-placeholder {
-  margin-top: 1rem;
+  margin: 1.5rem auto 0;
   padding: 2rem;
+  max-width: 480px;
   background-color: #e0e0e0;
-  text-align: center;
   font-style: italic;
   color: #555;
+  border-radius: 8px;
 }
 
 footer {
-  background-color: #f4d9c6;
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold;
-}
-
-/* Odkazy */
-a {
-  color: #b55d4a;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responzivita */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 1rem;
-  }
-}
+  background: linear-gradient(135deg, #eebd9a 0%, #f4d9c6 100%);
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  color: #8b3e2f;
+  box-shadow: 0 -
