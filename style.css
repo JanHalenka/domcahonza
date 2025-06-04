@@ -1,71 +1,117 @@
-/* Základní nastavení */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset a základní nastavení */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #fff8f0;
-  color: #333;
-  text-align: center; /* CENTRUM pro celý obsah */
+  box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* HLAVIČKA – sahá až do krajů */
 header {
+  width: 100vw;
   background: linear-gradient(135deg, #f4d9c6 0%, #eebd9a 100%);
   padding: 3rem 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 2.8rem;
+  font-weight: bold;
   color: #8b3e2f;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
 }
 
 header p {
-  margin: 0.5rem 0 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #b76b51;
   font-style: italic;
 }
 
-section {
+/* WRAPPER pro ostatní části */
+.wrapper {
+  width: 100%;
+  max-width: 800px;
   padding: 2rem 1rem;
-  border-bottom: 1px solid #eee;
-  max-width: 600px;
-  margin: 0 auto;
+}
+
+/* SEKCE */
+section {
+  margin-bottom: 2rem;
 }
 
 section h2 {
   color: #b55d4a;
-  margin-top: 0;
   font-size: 1.8rem;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 section p {
   font-size: 1.1rem;
-  max-width: 480px;
-  margin: 0 auto;
   color: #4b3a30;
-  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
+/* MAPA */
 .map-placeholder {
-  margin: 1.5rem auto 0;
-  padding: 2rem;
-  max-width: 480px;
   background-color: #e0e0e0;
-  font-style: italic;
   color: #555;
+  font-style: italic;
+  padding: 2rem;
   border-radius: 8px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
+/* PATIČKA */
 footer {
+  width: 100vw;
   background: linear-gradient(135deg, #eebd9a 0%, #f4d9c6 100%);
-  padding: 1.5rem 1rem;
-  font-weight: 600;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
   color: #8b3e2f;
-  box-shadow: 0 -
+  padding: 1.5rem 1rem;
+}
+
+/* Odkazy */
+a {
+  color: #b55d4a;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  .map-placeholder {
+    padding: 1.2rem;
+  }
+}
