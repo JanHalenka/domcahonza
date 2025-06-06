@@ -97,6 +97,25 @@ a:hover {
   text-decoration: underline;
 }
 
+.photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Mobilní zařízení: zmenšíme max-width, zvětšíme margin */
+@media (max-width: 600px) {
+  .photo {
+    max-width: 90%;
+    margin: 2.5rem auto 3rem;
+    opacity: 0.9;
+  }
+}
+
 /* Responzivita */
 @media (max-width: 768px) {
   header h1 {
