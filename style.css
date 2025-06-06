@@ -82,7 +82,7 @@ footer {
   width: 100vw;
   background: linear-gradient(135deg, #eebd9a 0%, #f4d9c6 100%);
   box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #8b3e2f;
   padding: 1.5rem 1rem;
 }
