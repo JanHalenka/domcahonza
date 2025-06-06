@@ -97,21 +97,29 @@ a:hover {
   text-decoration: underline;
 }
 
-.photo {
+/* foto */
+.photo-container {
+  display: flex;
+  justify-content: center; /* horizontální centrování */
+  align-items: center;     /* vertikální centrování */
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  margin: 2rem 0;          /* mezera nahoře a dole */
+  min-height: 200px;       /* volitelně, aby měl kontejner nějakou výšku */
 }
 
-/* Mobilní zařízení: zmenšíme max-width, zvětšíme margin */
+.photo {
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
 @media (max-width: 600px) {
   .photo {
     max-width: 90%;
-    margin: 2.5rem auto 3rem;
     opacity: 0.9;
   }
 }
