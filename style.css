@@ -109,10 +109,9 @@ a:hover {
 
 .first-photo {
   max-width: 70%;
-  width: 50%;
+  width: 25%;
   height: auto;
   opacity: 0.9;
-  transition: opacity 0.3s ease;
 }
 
 @media (max-width: 600px) {
