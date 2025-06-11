@@ -23,7 +23,7 @@ body {
 /* HLAVIČKA – sahá až do krajů */
 header {
   width: 100vw;
-  background: linear-gradient(135deg, #f4d9c6 0%, #eebd9a 100%);
+  background: linear-gradient(135deg, #f4d9c6 0%, #ffe6c9 100%);
   padding: 3rem 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -80,7 +80,7 @@ section p {
 /* PATIČKA */
 footer {
   width: 100vw;
-  background: linear-gradient(135deg, #eebd9a 0%, #f4d9c6 100%);
+  background: linear-gradient(135deg, #ffe6c9 0%, #f4d9c6 100%);
   box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
   /* font-weight: bold; */
   color: #8b3e2f;
@@ -116,7 +116,7 @@ a:hover {
 
 @media (max-width: 600px) {
   .invitation-photo {
-    max-width: 90%;
+    max-width: 100%;
     opacity: 0.9;
   }
 }
