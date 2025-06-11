@@ -98,6 +98,32 @@ a:hover {
 }
 
 /* foto */
+.first-photo-container {
+  display: flex;
+  justify-content: center; /* horizontální centrování */
+  align-items: center;     /* vertikální centrování */
+  width: 100%;
+  margin: 2rem 0;          /* mezera nahoře a dole */
+  min-height: 200px;       /* volitelně, aby měl kontejner nějakou výšku */
+}
+
+.first-photo {
+  max-width: 70%;
+  width: 50%;
+  height: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .first-photo {
+    max-width: 90%;
+    opacity: 0.9;
+  }
+}
+
+
+/* foto */
 .photo-container {
   display: flex;
   justify-content: center; /* horizontální centrování */
