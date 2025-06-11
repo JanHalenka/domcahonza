@@ -108,7 +108,7 @@ a:hover {
 }
 
 .invitation-photo {
-  max-width: 70%;
+  min-width: 400px;
   width: 25%;
   height: auto;
   opacity: 0.9;
@@ -120,7 +120,6 @@ a:hover {
     opacity: 0.9;
   }
 }
-
 
 /* foto */
 .photo-container {
