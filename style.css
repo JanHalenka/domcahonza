@@ -99,7 +99,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* foto */
+/* foto kytka */
 .invitation-photo-container {
   display: flex;
   justify-content: center; /* horizontální centrování */
@@ -128,7 +128,7 @@ a:hover {
   display: flex;
   justify-content: center; /* horizontální centrování */
   align-items: center;     /* vertikální centrování */
-  width: 100%;
+  width: 75%;
   margin: 2rem 0;          /* mezera nahoře a dole */
   min-height: 200px;       /* volitelně, aby měl kontejner nějakou výšku */
 }
