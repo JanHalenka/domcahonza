@@ -129,7 +129,7 @@ a:hover {
   justify-content: center; /* horizontální centrování */
   align-items: center;     /* vertikální centrování */
   width: 75%;
-  margin: 2rem 0;          /* mezera nahoře a dole */
+  margin: 2rem 0 0 0;          /* mezera nahoře a dole */
   min-height: 200px;       /* volitelně, aby měl kontejner nějakou výšku */
 }
 
@@ -145,7 +145,7 @@ a:hover {
 
 @media (max-width: 600px) {
   .photo {
-    max-width: 90%;
+    max-width: 100%;
     opacity: 0.9;
   }
 }
