@@ -38,6 +38,7 @@ header h1 {
 }
 
 header p {
+  font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   color: #b76b51;
   font-style: italic;
